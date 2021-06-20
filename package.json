@@ -1,0 +1,19 @@
+{
+  "name": "project-website-template",
+  "version": "0.0.28",
+  "description": "Project website template",
+  "keywords": [
+    "Project"
+  ],
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix ./project-website-submodule/ run build",
+    "clean": "npm --prefix ./project-website-submodule/ run clean",
+    "postinstall": "cd ./project-website-submodule/ && git submodule init && git submodule update && npm install",
+    "server": "npm --prefix ./project-website-submodule/ run server",
+    "test": "npm --prefix ./project-website-submodule/ run test",
+    "watch": "npm --prefix ./project-website-submodule/ run watch"
+  },
+  "author": "X28 Project <x28project@gmail.com> (http://www.x28project.com)",
+  "license": "MIT"
+}

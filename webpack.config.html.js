@@ -18,7 +18,15 @@
  *       href: string;
  *       title: string;
  *     };
+ *     bandcamp?: {
+ *       href: string;
+ *       title: string;
+ *     };
  *     facebook?: {
+ *       href: string;
+ *       title: string;
+ *     };
+ *     github?: {
  *       href: string;
  *       title: string;
  *     };
@@ -61,9 +69,17 @@ module.exports = {
       href: 'https://archive.org/#search.php?query=%22Project+Website+Template22&sort=-publicdate',
       title: 'Internet Archive',
     },
+    bandcamp: {
+      href: 'https://bandcamp.com/#projectwebsitetemplate.bandcamp.com/',
+      title: 'Bandcamp',
+    },
     facebook: {
       href: 'https://www.facebook.com/#projectwebsitetemplate',
       title: 'Facebook',
+    },
+    github: {
+      href: 'https://www.github.com/#projectwebsitetemplate',
+      title: 'GitHub',
     },
     linkedin: {
       href: 'https://www.linkedin.com/in/#projectwebsitetemplate',

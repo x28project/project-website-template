@@ -35,7 +35,7 @@
  */
 module.exports = [
   {
-    id: 'ProjectWebsiteTemplate-Album',
+    id: 'album',
     abbr: 'A',
     cover: {
       alt: 'Project Website Template - Album - Cover',
@@ -64,7 +64,7 @@ module.exports = [
     zip: '/#songs/Album/Project Website Template - Album.zip',
   },
   {
-    id: 'VideoGame',
+    id: 'videoGame',
     abbr: 'VG',
     cover: {
       alt: 'Video Game - Cover',
@@ -85,11 +85,26 @@ module.exports = [
     zip: '/#games/Video Game 1.0 (Windows and Mac).zip',
   },
   {
-    id: 'ProjectWebsiteTemplate-EmbeddedVideo',
+    id: 'hiddenAlbum',
+    abbr: 'H',
+    hidden: true,
+    title: 'Hidden Album',
+    tracks: [
+      {
+        href: '/#songs/Album/Project Website Template - Hidden - 01 Hidden Track.mp3',
+        title: 'Hidden Track',
+      },
+    ],
+    year: 2014,
+    zip: '/#songs/Album/Project Website Template - Hidden Album.zip',
+  },
+  {
+    id: 'embeddedVideo',
     abbr: 'EV',
-    // iframe: {
-    //   src: 'https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0&amp;showinfo=0',
-    // },
+    iframe: {
+      // src: 'https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0&amp;showinfo=0',
+      src: '/images/Album - Video.mp4',
+    },
     title: 'Embedded Video',
     video: true,
     year: 2010,
